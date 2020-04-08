@@ -20,7 +20,15 @@ yum install jenkins
 
 # Start and Enable teh Service 
 systemctl enable jenkins
-systemctl jenkins restart
-systemctl jenkins status
+systemctl restart jenkins
+systemctl status jenkins
 
-Access 
+# Access WebUI jekins
+http://devops.infoftps.com:8080/
+cat /var/lib/jenkins/secrets/initialAdminPassword 
+Install Suggested Plugin
+
+
+
+
+# 
