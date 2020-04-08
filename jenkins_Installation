@@ -29,6 +29,9 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 Install Suggested Plugin
 
 
+# Create Job
+Click on Jenkins > New Item > Freestyle Project > go to build section > add build > select "execute shell" 
+build now. 
 
 
 # 
