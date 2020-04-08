@@ -28,10 +28,46 @@ http://devops.infoftps.com:8080/
 cat /var/lib/jenkins/secrets/initialAdminPassword 
 Install Suggested Plugin
 
+# Create a Admin user and password (admin/admin)
+
+# Configure Intance > Finish > Start Jenkins
 
 # Create Job
 Click on Jenkins > New Item > Freestyle Project > go to build section > add build > select "execute shell" 
 build now. 
 
 
-# 
+# Authentication 
+1. Metrix ased Authentication
+2. Project Based Authorization (one can have multiple permissions)
+
+# Plugin 
+  1. Audit Trail : To generate the logs   ==> Manage Jenkins > COnfigure Systems > Audit Trial > Add the Logfile > Location, size, count > location - /tmp/audit*
+  
+ # Notifications in Jenkins
+     Dependency : Build SMTP Server 
+     Job1 -> Trigger -> Job2 -> Trigger -> Job3   
+     
+     Manage Jenkins > Configure System > SMPT 
+            ==> Go to Job > COnfigure > Post Builds > Add Trigger Receipnts 
+            
+
+# Scheduling the jobs
+    1. Timer
+       Want to schedule job at per
+          Go to jobs > Build Triggers > Enable Bild periodically > Schedule [Cron job]
+    
+    2. Poll SCM
+       If changed in Git ( Commits), it automatically should compile
+       Create New JOb > Free  Style > Source Code Management  > Select Git > Provide the repository URL >  
+    
+    3. PipelineSource 
+ 
+ 
+     
+     
+     
+   
+
+
+
