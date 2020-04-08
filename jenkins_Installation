@@ -1,1 +1,11 @@
+# Install Java
+rpm -ivh https://mirrors.huaweicloud.com/java/jdk/8u181-b13/jdk-8u181-linux-x64.rpm
 
+# Set Java Path
+echo JAVA_HOME=/usr/java/latest >> /etc/bashrc
+echo 'PATH=$JAVA_HOME/bin:$PATH' >> /etc/bashrc
+ln -s /usr/java/jdk1.8.0_181 /usr/java/latest
+source /etc/bashrc
+java -version
+echo $JAVA_HOME
+ls -ltra /usr/java
